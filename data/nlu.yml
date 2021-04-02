@@ -37,6 +37,7 @@ nlu:
     - por supuesto
     - suena bien
     - afirmativo
+    - claro que si
 
 - intent: deny
   examples: |
