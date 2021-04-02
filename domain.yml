@@ -1,0 +1,31 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- stop
+- greet
+- mood_unhappy
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+responses:
+  utter_greet:
+  - text: Hola, soy un asiste virtual ... como te sientes?
+  utter_cheer_up:
+  - text: 'Aca hay una image para animarte:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Te ayudo eso?
+  utter_happy:
+  - text: Que bueno!!!!
+  utter_goodbye:
+  - text: Hasta pronto!!!
+  utter_iamabot:
+  - text: Soy un bot, powered by Rasa.
+actions:
+- utter_cheer_up
+- utter_did_that_help
+- utter_greet
