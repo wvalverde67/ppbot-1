@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: decir adios cada vez que el usuario dice adios
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: decir que soy un bot cuando el usuario lo pregunta
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
